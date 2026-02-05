@@ -1,0 +1,26 @@
+nodejs -> not a programming language
+        -> not a technology
+        -> not a framework
+        -> not a library
+
+we can't write backend with only js, because it doesn't have those functionalities which the backend 
+is consist of
+ryan dahl wanted that we can write backend in js
+google chrome's v8 engine is open source(it's made in c++)
+he made a wrapper for v8
+so, we write in js, which is received by the wrapper layer and that code will create a server with v8 engine with c++ modules
+and this whole thing is called nodejs
+
+It's a js runtime environment
+npm- it is a package store(it's where people upload their packages which then can be installed and used by 
+others)
+
+
+
+we used npm initt -> to create package.json -> where everything about the project is written
+
+
+
+If no package.json file, then a .js file will be considered inside a comman js module, if a package.json file is preset with type : module, then
+it has ES6 moduling
+if extention of the file is .mjs, then it uses ES6 moduling
