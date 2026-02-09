@@ -30,7 +30,7 @@ app.post('/blogs', (req, res)=>{
 
 app.get('/blogs/:id', (req,res)=>{
     const result = blogList.filter((blog)=> blog.id==req.params.id)
-    return req.status(200).json({
+    return res.status(200).json({
         data: result,
         success : true
 })
