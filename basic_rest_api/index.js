@@ -9,7 +9,19 @@ const PORT = 3000;
 
 //mimic the db using an array
 let blogList = [];
-app.get('/blogs', (req, res)=>{
+function logger(req,res,next){
+    console.log(req.url);
+    console.log(req.body);
+    next();
+}
+
+function isAuthenticated(req, res, next){
+    console.log("yes the user is authenticated");
+    next();
+}
+app.get('/blogs',logger,isAuthenticated, (req, res)=>{ // the middle ware is added into the controller
+    console.log("hitting");
+    
     return res.status(200).json({ // returns the response object, but also with a status code in it.
         data:blogList,
         success: true,
