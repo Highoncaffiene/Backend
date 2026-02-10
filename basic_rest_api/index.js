@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json()); // .use() sets up a middleware
+app.use(logger);
 
 // app.use(express.json())
 const PORT = 3000;
