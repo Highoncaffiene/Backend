@@ -28,5 +28,4 @@ let iphone = new Product("iphone 15 pro max", 100000);
 let macbook = new Product("macbook m3", 100000);
 console.log(iphone,macbook);
 // console.log(typeof macbook);
-
-
+// when uusing class, we cannot use the constructor without using the new keyword
