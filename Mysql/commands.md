@@ -2,44 +2,52 @@
 `show databases;`
 
 ## create a database
-`create database nameofdb;`
-`eg:  
+`create database nameofdb;`  
+`eg:
 create database blogging;`
 
 ## Starrt working on a database
-__use  nameofdatabase__
-`use Blogging;`
+`use  nameofdatabase `   
+eg: `use Blogging;`
 
 ## To delete a database
-__drop database nameofdatabase;__
+`drop database nameofdatabase;`  
+eg:
 `Drop database blogging;`
 ## to see tables:
-__show tables;__
-`use Blogging;  
-show tables;
+`show tables;`  
+eg: 
+`use Blogging;`  
+show tables;`
 `
 ## create table
-__create table tablename (
+`create table tablename (
     attribute name  attribute type  extra-properties,
     attribute2 name  attribute2 type  extra-properties2
-);
+);`  
+
+
 ` CREATE TABLE blogs(
     title varchar(30) 
     id int
     content varchar(1200)
 ); ` 
+
 Eg:  
 ` CREATE TABLE Actors(
      Name Varchar(20),
      Gender ENUM("Male", "Female","Transgeder"),
-     Charges Decimal);`
+     Charges Decimal);`  
+
+
 
 `create table actors(
      name varchar(20) not null,
      geder enum("male", "female", "transgender") not null,
      charges Decimal,
      id int auto_increment,
-     primary key(id));  `
+     primary key(id));  `  
+     
 
 ->*auto_increment automatically increases the prev id by one to ->create new id for next entry*  
 
