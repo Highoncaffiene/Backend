@@ -15,4 +15,6 @@ const obj = function(){
     
 }
 
-obj();
+// obj();
+let x = obj.bind(player1)
+x();
