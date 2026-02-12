@@ -27,3 +27,6 @@ var obj2 = {
     }
 }
 obj2.display()
+
+
+// with arrow function, this doen't point to the call sight, it resolves lexically
