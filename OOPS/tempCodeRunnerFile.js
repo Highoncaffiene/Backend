@@ -1,0 +1,1 @@
+obj2.call(player1, 2,45)
