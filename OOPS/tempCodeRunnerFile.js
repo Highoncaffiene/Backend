@@ -1,1 +1,2 @@
-obj2.call(player1, 2,45)
+
+    this.cateogoryname = c;
