@@ -1,6 +1,6 @@
 class Category{
     constructor(c){
-        this.categoryname = this.categoryname;
+        this.categoryname =c;
     }
 
     getCategoryName(){
@@ -18,7 +18,7 @@ class Product extends Category{
     display(){
         console.log("Details of the product are")
         console.log("Name", this.name);
-        console.log("Price", this.price);  
+        console.log("Price", this.price); 
         this.getCategoryName()
         
     }
