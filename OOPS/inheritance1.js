@@ -8,9 +8,9 @@ class Category{
     }
 }
 
-class Product extends Category{
+class Product extends Category{ // creates a child class that inherits from a parent class  
     constructor(n,p,c){
-        super(c)
+        super(c) //used to call parent class's constructor and to access parent methods.
         this.name = n;
         this.price =p;
     }
