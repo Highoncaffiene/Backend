@@ -16,10 +16,10 @@ function logger(req,res,next){
     next();
 }
 
-function isAuthenticated(req, res, next){
-    console.log("yes the user is authenticated");
-    next();
-}
+// function isAuthenticated(req, res, next){
+//     console.log("yes the user is authenticated");
+//     next();
+// }
 app.get('/blogs',logger,isAuthenticated, (req, res)=>{ // the middle ware is added into the controller
     console.log("hitting");
     
