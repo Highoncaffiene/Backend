@@ -5,7 +5,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json()); // .use() sets up a middleware
 app.use(logger);
 
-// app.use(express.json())
+app.use(express.json())
 const PORT = 3000;
 
 //mimic the db using an array
@@ -16,10 +16,10 @@ function logger(req,res,next){
     next();
 }
 
-// function isAuthenticated(req, res, next){
-//     console.log("yes the user is authenticated");
-//     next();
-// }
+function isAuthenticated(req, res, next){
+    console.log("yes the user is authenticated");
+    next();
+}
 app.get('/blogs',logger,isAuthenticated, (req, res)=>{ // the middle ware is added into the controller
     console.log("hitting");
     
