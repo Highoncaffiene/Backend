@@ -1,4 +1,5 @@
-const express = require('express'); // cjs moduling
+//cjs moduling 
+const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
